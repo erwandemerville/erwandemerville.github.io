@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/ie10-viewport-bug-workaround.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/sticky-footer-navbar.css' | relative_url }}">
+</head>
+<body>
+  {% include nav.html %}
+  <main>
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <!-- Scripts supplémentaires -->
+  <script type="text/javascript">
+    $('#langages-tab').tab('show')
+  </script>
+  <!-- -->
+</body>
+</html>

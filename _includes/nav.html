@@ -1,0 +1,46 @@
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-static-top">
+<div class="container">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="{{ site.baseurl }}">{{ site.title }}</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        {% if page.title == 'Accueil' %}
+        <li class="active"><a href="{{ '/' | relative_url }}">Accueil</a></li>
+        {% else %}
+        <li><a href="{{ '/' | relative_url }}">Accueil</a></li>
+        {% endif %}
+    
+        {% if page.title == 'CV' %}
+        <li class="active"><a href="{{ '/cv' | relative_url }}">CV</a></li>
+        {% else %}
+        <li><a href="{{ '/cv' | relative_url }}">CV</a></li>
+        {% endif %}
+    
+        {% if page.title == 'Compétences' %}
+        <li class="active"><a href="{{ '/competences' | relative_url }}">Compétences</a></li>
+        {% else %}
+        <li><a href="{{ '/competences' | relative_url }}">Compétences</a></li>
+        {% endif %}
+    
+        {% if page.title == 'Projets' %}
+        <li class="active"><a href="{{ '/projets' | relative_url }}">Projets</a></li>
+        {% else %}
+        <li><a href="{{ '/projets' | relative_url }}">Projets</a></li>
+        {% endif %}
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+        <li style="background-color: rgb(115, 39, 159)"><a href="https://nsi.erwandemerville.fr/" target="_blank"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Numérique et sciences informatiques</a></li>
+        <li style="background-color: rgb(195, 107, 19)"><a href="https://snt.erwandemerville.fr/" target="_blank"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Sciences numériques et technologie</a></li>
+    </ul>
+    </div><!--/.nav-collapse -->
+</div>
+</nav>

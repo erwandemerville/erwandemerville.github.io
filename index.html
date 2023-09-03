@@ -1,0 +1,59 @@
+---
+layout: default
+title: Accueil
+permalink: /
+---
+
+<div class="container">
+	<div class="col-md-8 col-md-offset-2 rounded">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#presentation" aria-controls="presentation" role="tab" data-toggle="tab">Présentation</a></li>
+    <!-- <li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab">Vidéo de présentation</a></li> -->
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+
+  <div role="tabpanel" class="tab-pane fade in active" id="presentation">
+
+	<div class="col-md-5">
+	<h2>Erwan Demerville</h2>
+
+	<div class="col-md-12">
+    <img src="{{ '/assets/images/photo.jpg' | relative_url }}" alt="Ma photo" width="95%" height="auto" class="img-circle" />
+	</div>
+
+	<div class="col-md-12 infos" style="margin-top: 10px;">
+    <div style="width: 300px; margin: auto;">
+	<ul style="list-style-type: none; white-space: nowrap; margin-left: -15px;">
+    <li><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Professeur d'informatique</li>
+	<li><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Hauts-de-France</li>
+	<li><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> 03 mai 1995</li>
+	<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:{{ site.email_reverse }}"><span style="unicode-bidi: bidi-override; direction: rtl;">{{ site.email_reverse }}</span></a></li>
+	<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:{{ site.email_pro_reverse }}"><span style="unicode-bidi: bidi-override; direction: rtl;">{{ site.email_pro_reverse }}</span></a></li>
+    </ul>
+    </div>
+	</div>
+
+	</div>
+
+	<div class="col-md-7" style="text-align: justify;">
+	<h2>Qui suis-je?</h2>
+
+	<p class="test" style="text-indent: 4em;">Professeur de <strong>numérique et sciences informatiques</strong> et de <strong>sciences numériques et technologie</strong> en lycée général, j'ai commencé à appréhender l'informatique et les pratiques liées au numérique dès l'enfance en tant qu'amateur, pour finalement y consacrer mes études.</p>
+	<p style="text-indent: 4em;">Mes connaissances en <strong>informatique</strong> englobent des notions de certains langages de <strong>développement web</strong> (<em>HTML</em>, <em>CSS</em>, <em>JavaScript</em>), de <strong>développement logiciel</strong> (<em>Python</em>, <em>C</em>, <em>C#</em>), d'<strong>architecture des ordinateurs</strong>, de <strong>réseaux informatiques</strong>... <a href="{{ '/competences' | relative_url }}">Voir ici</a> pour plus de détails.<br />
+    Par ailleurs, mon parcours en <strong>audiovisuel</strong> me permet de concevoir différents aspects d'une production audiovisuelle dans son ensemble, en passant par des étapes de <strong>préproduction</strong> (<em>repérages</em>, <em>découpage technique</em>), de <strong>production</strong> (<em>tournage</em>) et de <strong>postproduction</strong> (<em>montage</em>, <em>effets spéciaux</em>)...<br />
+    Je nourris également une passion pour la <strong>composition musicale (MAO)</strong>, notamment de musique électronique.</p>
+	<p style="text-indent: 4em;">Étant conscient de l'évolution permanente des technologies, je tente chaque jour d'actualiser mes connaissances et d'en acquérir davantage.<br />
+	En cas de questionnements liés à ma profession, merci de me contacter à <a href="mailto:{{ site.email_pro_reverse }}"><span style="unicode-bidi: bidi-override; direction: rtl;">{{ site.email_pro_reverse }}</span></a>.<br />
+    Pour toute autre demande, vous pouvez me contacter à <a href="mailto:{{ site.email_reverse }}"><span style="unicode-bidi: bidi-override; direction: rtl;">{{ site.email_reverse }}</span></a>.</p>
+	</div>
+
+	</div>
+
+  </div>
+
+	</div>
+	</div>
